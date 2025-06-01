@@ -1,0 +1,96 @@
+What is EMI?|EMI stands for Equated Monthly Installment, a fixed payment made every month.
+What is tenure?|Tenure is the total duration of the loan repayment period.
+What is interest rate?|Interest rate is the percentage charged on the loan amount.
+What is collateral?|Collateral is an asset pledged to secure the loan.
+What is principal amount?|Principal is the original sum borrowed from the lender.
+What is a secured loan?|A secured loan is backed by collateral like property or assets.
+What is an unsecured loan?|An unsecured loan is not backed by any collateral.
+What is credit score?|Credit score indicates your creditworthiness and affects loan approval.
+What is down payment?|Down payment is the initial amount you pay upfront when taking a loan.
+What is loan disbursement?|Loan disbursement is the release of loan funds to the borrower.
+How is EMI calculated?|EMI is calculated using the formula involving principal, interest rate, and tenure.
+What happens if I miss an EMI?|Missing EMIs can lead to penalties and affect your credit score.
+What is prepayment?|Prepayment is paying part of your loan earlier than scheduled.
+What is foreclosure?|Foreclosure is fully repaying the loan before the end of tenure.
+What is loan default?|Default happens when a borrower fails to repay the loan as agreed.
+Can EMI change?|Yes, EMI can change in floating interest rate loans.
+What is a fixed interest loan?|A loan where the interest rate remains the same throughout the tenure.
+What is a floating interest loan?|Interest rate changes as per market conditions.
+What documents are needed for a loan?|Common documents include ID proof, address proof, income proof, etc.
+Can I transfer my loan to another bank?|Yes, it's called a balance transfer for better interest rates.
+What is a personal loan?|A personal loan is an unsecured loan typically used for personal expenses.
+What is a home loan?|A home loan is taken to purchase or construct a house and is usually secured by the property.
+What is an education loan?|An education loan is used to fund tuition and other educational expenses.
+What is a car loan?|A car loan is used to buy a new or used car, usually secured by the vehicle itself.
+What is a business loan?|A business loan helps companies manage operations, expansion, or purchase equipment.
+What is loan processing fee?|It is the fee charged by a lender to process a loan application.
+What is loan agreement?|A loan agreement is a contract outlining the terms of the loan between borrower and lender.
+What is loan sanction?|Loan sanction is the formal approval of your loan amount after application review.
+What is loan approval?|Loan approval is confirmation that the lender agrees to lend the requested amount.
+What is repayment schedule?|It is a table showing due EMIs with dates, principal, and interest split.
+What is overdue payment?|Overdue payments are EMIs not paid by the due date.
+What is loan eligibility?|Loan eligibility is the maximum loan amount you can get based on your profile.
+How is loan eligibility calculated?|It depends on income, credit score, liabilities, and employer type.
+Can I get a loan with low credit score?|Yes, but the interest rate may be higher and eligibility lower.
+Can I take a second loan while repaying another?|Yes, if you meet the eligibility and income criteria.
+Can I change my EMI date?|Many lenders allow you to change EMI dates by request.
+Can I pre-close my loan?|Yes, pre-closing allows you to pay off your loan early, possibly with a fee.
+Can I pay more than my EMI?|Yes, extra payments go toward principal and can reduce total interest.
+Will missed EMIs affect my credit score?|Yes, missed payments are reported to credit bureaus.
+What is loan restructuring?|It is a modification of terms for a loan in financial hardship cases.
+What is amortization?|Amortization is the gradual reduction of loan principal via regular EMIs.
+What is a balloon payment?|A large, lump-sum payment due at the end of a loan tenure.
+What is refinancing?|Replacing an existing loan with a new one, usually with better terms.
+What is loan-to-value ratio?|It's the ratio of the loan amount to the value of the collateral.
+What is debt-to-income ratio?|It's the ratio of total monthly debt to gross monthly income.
+What affects interest rates?|Credit score, loan type, tenure, and market rates affect interest.
+What is loan risk?|Loan risk is the likelihood that the borrower may default on repayment.
+What is the impact of collateral?|Collateral lowers risk for the lender and can improve loan terms.
+What is the safest type of loan?|Secured loans like home loans are safer due to lower interest rates.
+Is it safe to take a loan online?|Yes, from verified banks or NBFCs with proper digital security.
+Can I check my loan risk?|Yes, risk is based on repayment history, credit, collateral, and interest.
+How to improve loan eligibility?|Improve credit score, increase income, reduce liabilities, add co-applicants.
+What is a co-applicant?|A co-applicant shares the loan responsibility and can improve eligibility.
+What is a guarantor?|A guarantor agrees to repay the loan if the borrower defaults.
+Can I cancel my loan after approval?|Yes, but some banks may charge a processing or cancellation fee.
+What is the EMI start date?|It's the date from which your EMI payments begin, post disbursement.
+What is loan closure certificate?|It’s an official document confirming your loan has been fully repaid.
+What is the difference between tenure and term?|Both mean the duration of loan repayment.
+Can I get a loan without income proof?|It's difficult; some lenders may offer against collateral or with co-signer.
+What is a loan moratorium?| A loan moratorium is a temporary suspension of loan EMIs, typically offered during financial hardship or crisis periods.
+What is a gold loan?|A gold loan is secured by gold ornaments or assets.
+What is a no-cost EMI?|A no-cost EMI means you pay only the product price in equal installments, with no additional interest charges.
+What is an EMI calculator?|An EMI calculator is an online tool that estimates your monthly EMI based on loan amount, interest rate, and tenure.
+What is a top-up loan?|A top-up loan is an additional loan provided on top of an existing loan, typically with minimal documentation.
+What is a sanction letter?|A sanction letter is an official document from the lender confirming the loan approval and detailing terms and conditions.
+What is a disbursement letter?|A disbursement letter outlines the details of the amount released, disbursement date, and mode of disbursement.
+What is a loan margin?|Loan margin is the difference between the property cost and the loan amount; it’s the amount the borrower pays from their own funds.
+What is credit appraisal?|Credit appraisal is the evaluation of a borrower's financial status and creditworthiness before loan approval.
+What is loan underwriting?|Loan underwriting is the process of assessing the risk associated with giving a loan to the borrower.
+What is a repayment holiday?|A repayment holiday is a break period at the beginning of the loan tenure during which no EMI needs to be paid.
+What is an EMI bounce charge?|EMI bounce charge is a penalty imposed when your EMI payment fails due to insufficient funds.
+What is a top-up home loan?|A top-up home loan allows you to borrow more on your existing home loan, usually at competitive rates.
+What is a balance transfer loan?|A balance transfer loan allows you to transfer your existing loan to another lender offering better interest rates.
+What is EMI in advance?|In EMI in advance, the first EMI is paid at the time of loan disbursement.
+What is EMI in arrears?|In EMI in arrears, the first EMI is paid after one month from the date of disbursement.
+Can I change my loan tenure?|Yes, some lenders allow you to change the tenure based on your repayment capacity.
+What happens after loan foreclosure?|After foreclosure, the lender issues a loan closure certificate and releases any pledged collateral.
+Can I take a joint loan?|Yes, a joint loan can be taken with eligible co-applicants like a spouse or parent.
+What is the difference between secured and unsecured loan?|Secured loans require collateral; unsecured loans do not and may have higher interest rates.
+Can I apply for a loan online?|Yes, most banks and NBFCs allow online loan applications with digital document submission.
+What is loan refinancing?|Loan refinancing is replacing your existing loan with a new one, usually for a lower interest rate or better terms.
+What is a credit limit?|A credit limit is the maximum amount of credit that a lender extends to a borrower.
+What is a loan amortization schedule?|A loan amortization schedule is a table that details each loan payment, showing the amount going toward principal and interest over time.
+What is a debt consolidation loan?|A debt consolidation loan combines multiple debts into a single loan with a potentially lower interest rate.
+What is a loan origination fee?|A loan origination fee is a charge by the lender for processing a new loan application.
+What is a pre-qualification?|Pre-qualification is an initial assessment of a borrower's creditworthiness based on self-reported financial information.
+What is a loan term?|A loan term is the length of time over which the loan must be repaid.
+What is a fixed-rate mortgage?|A fixed-rate mortgage is a home loan with an interest rate that remains the same throughout the term of the loan.
+What is a variable-rate mortgage?|A variable-rate mortgage has an interest rate that can change over time based on market conditions.
+What is a loan default risk?|Loan default risk is the risk that a borrower will be unable to make the required payments on their loan.
+What is a personal loan for debt consolidation?|A personal loan for debt consolidation is a type of unsecured loan used to pay off multiple debts, simplifying payments into one monthly installment.
+What is a home equity line of credit (HELOC)?|A HELOC is a revolving line of credit secured by the equity in a borrower's home.
+What is a loan modification?|A loan modification is a change made to the terms of an existing loan, often to make payments more manageable for the borrower.
+What is a credit report?|A credit report is a detailed account of an individual's credit history, used by lenders to assess creditworthiness.
+What is a loan application?|A loan application is a formal request for a loan, providing the lender with necessary financial information about the borrower.
+What is a secured credit card?|A secured credit card is a type of credit card backed by a cash deposit made by the cardholder, which serves as collateral.
