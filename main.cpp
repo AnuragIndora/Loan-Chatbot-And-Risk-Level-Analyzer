@@ -7,6 +7,7 @@
 #include "fstream"
 #include "regex"
 #include "set"
+#include "sstream"
 
 #define endl "\n"
 
@@ -14,7 +15,8 @@
 std::string to_lower(const std::string &str)
 {
     std::string lower_str = str;
-    std::transform(lower_str.begin(), lower_str.end(), lower_str.begin(), [](unsigned char c) { return std::tolower(c); });
+    std::transform(lower_str.begin(), lower_str.end(), lower_str.begin(), [](unsigned char c)
+                   { return std::tolower(c); });
     return lower_str;
 }
 
@@ -79,9 +81,7 @@ std::string apply_synonym_normalization(const std::string &input)
 
         // Foreclosure
         {"close loan early", "foreclosure"},
-        {"pay off loan early", "foreclosure"}
-    };
-
+        {"pay off loan early", "foreclosure"}};
 
     std::string normalized = to_lower(input);
     for (const auto &[synonym, standard] : synonymMap)
@@ -174,11 +174,13 @@ std::vector<std::string> extract_all_keywords(const std::string &input, const st
     return found;
 }
 
-std::string calculateLoanRisk(int missed_repayments, double loan_amount, double collateral_value, double interest) {
-    if (collateral_value <= 0) return "INVALID (Collateral can't be zero and negative!)";
+std::string calculateLoanRisk(int missed_repayments, double loan_amount, double collateral_value, double interest)
+{
+    if (collateral_value <= 0)
+        return "INVALID (Collateral can't be zero and negative!)";
 
     double risk_score = (missed_repayments * 2.0) + (loan_amount / collateral_value) + (interest / 2.0);
-    
+
     if (risk_score <= 15.0)
         return "LOW";
     else if (risk_score > 15.0 && risk_score <= 25.0)
@@ -187,12 +189,13 @@ std::string calculateLoanRisk(int missed_repayments, double loan_amount, double 
         return "HIGH";
 }
 
-
-void classifyRiskFromCSV(const std::string& inputFile, const std::string& outputFile = "output_with_risk.csv") {
+void classifyRiskFromCSV(const std::string &inputFile, const std::string &outputFile = "output_with_risk.csv")
+{
     std::ifstream in(inputFile);
     std::ofstream out(outputFile);
-    
-    if (!in.is_open() || !out.is_open()) {
+
+    if (!in.is_open() || !out.is_open())
+    {
         std::cerr << "Failed to open input/output file.\n";
         return;
     }
@@ -202,16 +205,19 @@ void classifyRiskFromCSV(const std::string& inputFile, const std::string& output
     out << header << "risk_score,risk_level\n";
 
     std::string line;
-    while (std::getline(in, line)) {
+    while (std::getline(in, line))
+    {
         std::stringstream ss(line);
         std::string token;
         std::vector<std::string> values;
 
-        while (std::getline(ss, token, ',')) {
+        while (std::getline(ss, token, ','))
+        {
             values.push_back(token);
         }
 
-        if (values.size() < 4) continue;
+        if (values.size() < 4)
+            continue;
         std::string loan_acc_no = values[0];
         int missed = std::stoi(values[1]);
         double loan_amount = std::stod(values[2]);
@@ -228,7 +234,6 @@ void classifyRiskFromCSV(const std::string& inputFile, const std::string& output
     out.close();
     std::cout << "Risk levels written to: " << outputFile << "\n";
 }
-
 
 int main()
 {
@@ -285,7 +290,8 @@ int main()
             std::cout << "FAQ added successfully!" << endl;
             continue;
         }
-        else if (input_lower == "calculate risk") {
+        else if (input_lower == "calculate risk")
+        {
             int missed;
             double loan_amount, collateral, interest;
 
@@ -303,17 +309,17 @@ int main()
             std::cout << "Calculated Risk Level: " << risk << "\n";
             continue;
         }
-        else if (input_lower == "csv risk") {
+        else if (input_lower == "csv risk")
+        {
             std::string input_file, output_file;
             std::cout << "Enter input CSV file path: ";
             std::getline(std::cin, input_file);
             std::cout << "Enter output CSV file path: ";
             std::getline(std::cin, output_file);
-            
+
             classifyRiskFromCSV(input_file, output_file);
             continue;
         }
-
 
         bool answered = false;
 
