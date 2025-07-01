@@ -1,0 +1,60 @@
+what is emi?
+what is loan?
+loan
+exit
+WHAT IS EMI?
+What happens if I miss an EMI?
+WHat Is EmI?
+How to swim?
+How to swin?
+add
+exit
+What is loan moratorium?
+clear
+exit
+what is   emi?
+what is emi?
+exit
+what is emi?
+what is emi and tenure?
+what is emi and what is tenure?
+what is emi and tenure
+std::string synonym_applied = apply_synonym_normalization(user_input);
+auto matched = extract_all_keywords(input_lower, loanFAQs);
+exit
+what is emi and tenure?
+exit
+what is emi and what is tenure?
+how to calculate emi?
+
+exit
+calculate risk
+csv risk
+exit
+csv risk
+exit
+csv risk
+exit
+csv risk
+exit
+csv risk
+exit
+csv risk
+csv risk
+csv risk
+exit
+What is EMI?
+How to apply for a loan?
+apply for a loan
+Explain interest rate
+Tell me about foreclosure
+Explain loan period
+Describe credit rating
+What is gold loan?
+add
+What is a gold loan?
+calculate risk
+csv risk
+ 
+EMI
+exit
