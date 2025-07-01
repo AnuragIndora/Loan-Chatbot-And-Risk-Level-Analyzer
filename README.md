@@ -1,108 +1,97 @@
-# Loan Chatbot & Risk Level Analyzer
+# 💬 Loan Chatbot & Risk Level Analyzer (OOP Version)
 
-Welcome to the **Loan Chatbot**, a command-line tool designed to assist users in understanding loan-related topics and calculating loan risk levels. It offers both an interactive chatbot and batch processing features for real-world financial analysis.
+An intelligent **command-line chatbot** built with C++ and Object-Oriented Programming (OOP) principles. This assistant can answer loan-related questions, compute risk levels interactively, or process them in bulk using CSV files.
 
 ---
 
-## Features
+## 🔧 Features Overview
 
-### 1. Loan Question & Answer Chatbot
+### ✅ 1. Smart Loan Chatbot
 
-You can ask the chatbot questions such as:
+Ask questions like:
 
 * `What is EMI?`
-* `How to apply for a loan?`
-* `Explain interest rate`
-* `What is foreclosure?`
+* `Define collateral`
+* `How do I apply for a loan?`
 
-The chatbot provides:
+**Key Functionalities:**
 
-* Intelligent understanding of synonyms (e.g., “monthly payment” is interpreted as “EMI”)
-* Suggestions for similar questions if an exact match is not found
-* The ability to add custom questions and answers to its knowledge base
-* Logging of all user queries to `chatlog.txt`
+* ✅ Synonym-aware query matching (e.g., "monthly payment" → "EMI")
+* ✅ Suggests close matches if an exact question isn't found
+* ✅ Accepts new questions/answers to expand the knowledge base
+* ✅ Logs all user inputs to `chatlog.txt` for future analysis
 
 ---
 
-### 2. Manual Loan Risk Calculation
+### 📉 2. Manual Loan Risk Calculator
 
-Select the option `calculate risk` to manually input:
+Choose the option `calculate risk` and input:
 
-* Missed repayments
-* Loan amount
-* Collateral value
-* Interest rate
+* ❗ Number of missed payments
+* 💰 Loan amount
+* 🛡️ Collateral value
+* 📈 Interest rate
 
-The chatbot will compute a **risk score** using the following formula:
+The system uses this formula:
 
 ```
 risk_score = (missed_repayments * 2) + (loan_amount / collateral_value) + (interest / 2)
 ```
 
-It will then classify the risk according to the score:
-
-| Risk Score Range | Risk Level |
-| ---------------- | ---------- |
-| 0–15             | LOW        |
-| 15–25            | MEDIUM     |
-| 25+              | HIGH       |
+| Risk Score | Level  |
+| ---------- | ------ |
+| 0–15       | LOW    |
+| 15–25      | MEDIUM |
+| 25+        | HIGH   |
 
 ---
 
-### 3. Batch Risk Calculation (CSV File)
+### 📁 3. CSV-Based Bulk Risk Analyzer
 
-Select `csv risk` to:
+Use the command `csv risk` to:
 
-* Load loan records from `loan_data.csv`
-* Automatically compute the risk score and classification for each entry
-* Generate a new file `output_with_risk.csv` containing additional `risk_score` and `risk_level` columns
+* 📂 Read loan data from a CSV file (e.g., `loan_data.csv`)
+* ✅ Compute risk scores and levels automatically
+* 📤 Output to `output_with_risk.csv` with additional risk columns
 
----
+#### 🔍 Required CSV Column Order:
 
-### Important Note: CSV Format Requirement
+| Index | Field             | Example Header      |
+| ----- | ----------------- | ------------------- |
+| 1     | Loan ID (string)  | `loan_id`           |
+| 2     | Missed payments   | `missed_repayments` |
+| 3     | Loan amount       | `loan_amount`       |
+| 4     | Collateral value  | `collateral_value`  |
+| 5     | Interest rate (%) | `interest_rate`     |
 
-For the batch risk calculation to function correctly, the input file `loan_data.csv` must strictly follow a specific **column order**. Although column headers can be named freely, the **position and meaning of data in each row must remain consistent** as follows:
-
-| Column Position | Expected Data Type | Description                              | Example Header Name                     |
-| --------------- | ------------------ | ---------------------------------------- | --------------------------------------- |
-| 1               | String             | Loan account number or unique identifier | `loan_acc_num`, `loan_id`, `account_no` |
-| 2               | Integer            | Number of missed repayments              | `missed_repayments`, `no_missed`        |
-| 3               | Decimal / Numeric  | Loan amount                              | `loan_amount`, `loan_amount_value`      |
-| 4               | Decimal / Numeric  | Collateral value                         | `collateral_value`, `collateral_money`  |
-| 5               | Decimal / Numeric  | Interest rate (%)                        | `interest`, `interest_rate`             |
-
-#### Guidelines:
-
-* Column **headers** can be custom-named, but the **position and data type of each column must follow the order above**.
-* The system reads data based on position only; it does not rely on header names.
-* Incorrect column order or mismatched data types (e.g., text in numeric fields) may result in processing errors or incorrect risk evaluations.
-
-> Tip: Always validate that each row matches the expected order and types before running batch analysis.
+> **⚠️ Note**: Headers can be custom-named, but **data order and types must match**.
 
 ---
 
-## How to Use the Application
+## 🧠 Chatbot Intelligence
 
-### Step 1: Ensure `make` is Installed
+* 🧹 Input normalization: case-insensitive, whitespace trimming
+* 🔁 Synonym replacement: e.g., "describe EMI" → "what is EMI"
+* 🔍 Fuzzy matching for close questions
+* 📝 Custom Q\&A support (saved to `LoanFAQs.txt`)
 
-* On **Linux/macOS**: `make` is typically pre-installed.
-* On **Windows**: Install `make` via Git Bash, WSL, or a MinGW environment.
+---
 
-### Step 2: Open a Terminal in the Project Directory
+## 🧪 How to Use the Application
 
-### Step 3: Build the Application
+### 🔨 Build the Project
 
 ```bash
 make
 ```
 
-### Step 4: Run the Application
+### 🚀 Run the Chatbot
 
 ```bash
 make run
 ```
 
-### Step 5: Clean Build Files (Optional)
+### 🧼 Clean Build Files
 
 ```bash
 make clean
@@ -110,54 +99,82 @@ make clean
 
 ---
 
-## Project Files
+## 📂 Project Structure
 
-| File Name              | Description                                                   |
-| ---------------------- | ------------------------------------------------------------- |
-| `main.cpp`             | Main C++ source file containing the chatbot and logic         |
-| `Makefile`             | Build script for compiling, running, and cleaning the project |
-| `LoanFAQs.txt`         | Plain-text file containing chatbot questions and answers      |
-| `loan_data.csv`        | Sample CSV file for batch risk input                          |
-| `output_with_risk.csv` | Output file with computed risk scores and classifications     |
-| `chatlog.txt`          | Log file recording all user questions                         |
-| `README.md`            | Documentation file (this one)                                 |
-
----
-
-## How to Add Custom Questions
-
-1. Run the chatbot using:
-
-   ```bash
-   make run
-   ```
-2. Type `add` at the prompt
-3. Enter a new question and its corresponding answer
-4. The new entry is saved to `LoanFAQs.txt` and persists across sessions
+| File/Folder             | Description                                         |
+| ----------------------- | --------------------------------------------------- |
+| `main.cpp`              | Entry point of the application                      |
+| `Chatbot.hpp/.cpp`      | Chatbot class (user interaction logic)              |
+| `FAQManager.hpp/.cpp`   | Handles FAQ storage, search, and editing            |
+| `RiskAnalyzer.hpp/.cpp` | Risk scoring logic (manual & CSV modes)             |
+| `Utils.hpp/.cpp`        | Helper functions (normalization, logging, synonyms) |
+| `LoanFAQs.txt`          | Text file containing loan Q\&A                      |
+| `loan_data.csv`         | Sample input file for batch risk evaluation         |
+| `output_with_risk.csv`  | Output CSV with risk scores                         |
+| `chatlog.txt`           | Log of all user-entered questions                   |
+| `Makefile`              | Compilation, run, and clean commands                |
+| `README.md`             | You're reading it!                                  |
 
 ---
 
-## Chatbot Intelligence Features
+## ➕ Adding New Questions
 
-The chatbot system includes the following capabilities:
-
-* Input normalization (trimming, case standardization, and spacing)
-* Synonym detection and substitution (e.g., “installment” → “EMI”)
-* Suggestive search when no exact match is found
-* Customizable knowledge base through user interaction
-* Real-time CSV parsing for batch loan risk classification
+1. Run the app: `make run`
+2. Type `add`
+3. Enter your new question and answer
+4. It's saved in `LoanFAQs.txt` and available instantly
 
 ---
 
-## Common Commands
+## 💡 Supported Commands
 
-| Command          | Action                                                   |
-| ---------------- | -------------------------------------------------------- |
-| `<Question>`     | Retrieves the answer from the knowledge base             |
-| `add`            | Allows the user to input a new question and answer       |
-| `calculate risk` | Prompts the user for input and returns a risk evaluation |
-| `csv risk`       | Processes records from a CSV and generates output        |
-| `exit`           | Closes the chatbot session                               |
+| Command          | Description                                  |
+| ---------------- | -------------------------------------------- |
+| `<Any question>` | Fetch an answer from the knowledge base      |
+| `add`            | Add a new Q\&A entry to the database         |
+| `calculate risk` | Perform manual loan risk evaluation          |
+| `csv risk`       | Perform bulk loan risk scoring via CSV input |
+| `exit`           | Quit the chatbot                             |
 
 ---
 
+## 👨‍💻 Technologies Used
+
+* Language: C++ (Object-Oriented)
+* Build Tool: `make`
+* File I/O: Plaintext + CSV
+* Synonym matching: `std::regex`, mapping logic
+* Data storage: `unordered_map` for fast lookup
+
+---
+
+## 📌 Example Use Case
+
+```bash
+make run
+```
+
+```
+> What is monthly payment?
+  EMI stands for Equated Monthly Installment...
+
+> calculate risk
+  Missed payments: 2
+  Loan amount: 50000
+  Collateral: 20000
+  Interest: 10
+  Risk Level: LOW
+```
+
+---
+
+## 🏁 Final Notes
+
+* Make sure your input CSV follows the correct structure.
+* Extend the chatbot easily by updating `LoanFAQs.txt`.
+* Logs and risk reports are generated automatically.
+
+---
+
+**Built with ❤️ using Object-Oriented C++ for smarter financial interaction.**
+Feel free to contribute or customize for your use case!
